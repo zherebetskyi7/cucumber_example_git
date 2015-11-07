@@ -1,0 +1,17 @@
+Feature: to login the site
+	Order by I must login to the site
+	As user, As owner
+
+	Scenario: enter the site when I was registered earlier
+		When I open likebylook.com
+		And I click on 'enter' button
+		Then I redirect to registration page
+		And push my registered mail and password
+		And click on 'enter' button
+
+	Scenario: enter the site when I do not registered yet
+		When I open likebylook.com
+		And I click on 'enter' button
+		Then I redirect to registration page
+		And click on 'reqistration' button
+		And fill all text fields

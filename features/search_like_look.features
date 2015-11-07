@@ -1,0 +1,15 @@
+Feature: search field, to search product
+	In order search field on main page
+	As user
+	
+	Scenario: push 'sweater' product in search field
+		When I open likebylook.com
+		And enter 'sweater' in search field
+		And click on button 'search'
+		Then I show result search content
+
+	Scenario: push random name of product in search field
+		When I open likebylook.com
+		And enter random name in search field
+		And click on button 'search'
+		Then I show result search content

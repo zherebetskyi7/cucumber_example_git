@@ -1,0 +1,11 @@
+Feature: sub-menu dresses
+	In order sub_menu dresses in women => clothes
+	As user
+	Should be show all dresses
+
+	Scenario: after click on sub-menu dresses I show all dresses
+		When I open likebylook.com
+		And choose main menu women
+		And choose sub-menu clothes
+		And choose sub-menu dresses
+		Then I show all women dresses
